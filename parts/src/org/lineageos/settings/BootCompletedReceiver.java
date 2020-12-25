@@ -62,8 +62,11 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         }
 
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        EuiccDisabler.enableOrDisableEuicc(context);
         DozeUtils.checkDozeService(context);
         ThermalUtils.startService(context);
+
+
 
     }
 }
