@@ -254,4 +254,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 
 # Inherit from the proprietary version
--include vendor/xiaomi/sm8250-common/BoardConfigVendor.mk
+#-include vendor/xiaomi/sm8250-common/BoardConfigVendor.mk

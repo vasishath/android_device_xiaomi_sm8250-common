@@ -30,7 +30,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 #$(call inherit-product, vendor/gapps/pixel-gapps.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/sm8250-common/sm8250-common-vendor.mk)
+#$(call inherit-product, vendor/xiaomi/sm8250-common/sm8250-common-vendor.mk)
     
 #A/B
 AB_OTA_POSTINSTALL_CONFIG += \
