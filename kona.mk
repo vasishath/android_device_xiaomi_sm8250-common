@@ -348,9 +348,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     $(LOCAL_PATH)/configs/seccomp/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
 
-#Recovery
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/ramdisk,$(TARGET_COPY_OUT_RECOVERY)/root)
-
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \

@@ -176,7 +176,6 @@ TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/recovery.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USES_MKE2FS := true
 
@@ -187,28 +186,28 @@ ENABLE_VENDOR_RIL_SERVICE := true
 USE_SENSOR_MULTI_HAL := true
 
 # Sepolicy
-include device/qcom/sepolicy_vndr/SEPolicy.mk
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-BOARD_SEPOLICY_M4DEFS += \
-    debugfs_clk=vendor_debugfs_clk \
-    debugfs_ipc=vendor_debugfs_ipc \
-    latency_device=vendor_latency_device \
-    nfc_vendor_data_file=vendor_nfc_vendor_data_file \
-    persist_audio_file=vendor_persist_audio_file \
-    persist_sensors_file=vendor_persist_sensors_file \
-    public_vendor_default_prop=vendor_public_vendor_default_prop \
-    sensors_prop=vendor_sensors_prop \
-    sysfs_boot_adsp=vendor_sysfs_boot_adsp \
-    sysfs_devfreq=vendor_sysfs_devfreq \
-    sysfs_fingerprint=vendor_sysfs_fingerprint \
-    sysfs_graphics=vendor_sysfs_graphics \
-    sysfs_kgsl=vendor_sysfs_kgsl \
-    sysfs_scsi_host=vendor_sysfs_scsi_host \
-    sysfs_ssr=vendor_sysfs_ssr \
-    wcnss_service_exec=vendor_wcnss_service_exec \
-    wifi_vendor_data_file=vendor_wifi_vendor_data_file
+#include device/qcom/sepolicy_vndr/SEPolicy.mk
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+#BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
+#BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+#BOARD_SEPOLICY_M4DEFS += \
+#    debugfs_clk=vendor_debugfs_clk \
+#    debugfs_ipc=vendor_debugfs_ipc \
+#    latency_device=vendor_latency_device \
+#    nfc_vendor_data_file=vendor_nfc_vendor_data_file \
+#    persist_audio_file=vendor_persist_audio_file \
+#    persist_sensors_file=vendor_persist_sensors_file \
+#    public_vendor_default_prop=vendor_public_vendor_default_prop \
+#    sensors_prop=vendor_sensors_prop \
+#    sysfs_boot_adsp=vendor_sysfs_boot_adsp \
+#    sysfs_devfreq=vendor_sysfs_devfreq \
+#    sysfs_fingerprint=vendor_sysfs_fingerprint \
+#    sysfs_graphics=vendor_sysfs_graphics \
+#    sysfs_kgsl=vendor_sysfs_kgsl \
+#    sysfs_scsi_host=vendor_sysfs_scsi_host \
+#    sysfs_ssr=vendor_sysfs_ssr \
+#    wcnss_service_exec=vendor_wcnss_service_exec \
+#    wifi_vendor_data_file=vendor_wifi_vendor_data_file
 
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
