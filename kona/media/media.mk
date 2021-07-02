@@ -56,6 +56,6 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libmm-omxcore \
     init.qti.media.sh
-    
+
 #Vendor property to enable Codec2 for audio and OMX for Video
 PRODUCT_PROPERTY_OVERRIDES += debug.stagefright.ccodec=1
